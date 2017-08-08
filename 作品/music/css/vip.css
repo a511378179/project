@@ -1,0 +1,104 @@
+body,ul,li,a,aside,p,h4{margin:0;padding:0;}
+a{text-decoration:none;display:block;color:white;}
+li{list-style:none;}
+body{overflow:hidden;position:relative;}
+html{font-size:62.5%;}
+#box{position:absolute;top:0;left:0;transition:left 1s linear;}
+.screen{float:left;}
+.screen:nth-of-type(1){background:url("../img/banner_thumb_1.jpg")  100% 100%/100% 100% no-repeat;}
+.screen:nth-of-type(2){background:url("../img/banner_thumb_2.jpg")  100% 100%/100% 100% no-repeat;}
+.screen:nth-of-type(3){background:url("../img/banner_thumb_3.jpg")  100% 100%/100% 100% no-repeat;}
+.screen:nth-of-type(4){background:url("../img/banner_thumb_4.jpg")  100% 100%/100% 100% no-repeat;}
+.screen:nth-of-type(5){background:url("../img/banner_thumb_5.jpg")  100% 100%/100% 100% no-repeat;}
+aside{width:20%;height:5%;position:fixed;bottom:5%;left:40%;display: block;overflow: hidden;z-index:10}
+aside>p{width:15%;height:100%;float:left;margin-left:3%;border-radius: 50%;background-color:rgba(128,128,128,0.4);}
+.focus{background-image: linear-gradient(to right bottom,orange 0% ,white 50%,orange 100%);animation:circle 2s linear 0s infinite alternate;}
+@keyframes circle{
+    0%{background-image: linear-gradient(to right bottom,orange 0% ,white 50%,orange 100%);}
+    50%{background-image: linear-gradient(to right bottom,lightblue 0% ,white 50%,lightblue 100%);}
+    100%{background-image: linear-gradient(to right bottom,green 0% ,white 50%,green 100%);}
+}
+nav{width:100%;height:7.5rem;background:rgba(255,255,255,0.4);position: fixed;top:0;left:0;z-index:10}
+nav>ul{width:90%;margin:0 5%;height:100%;}
+nav>ul>.logo{width:20%;height:7.5rem;background:url("../img/logo.png") 100% 100%/100% 100% no-repeat;overflow: hidden;cursor: pointer;}
+nav>ul>li{width:16%;height:7.5rem;line-height:100%;float:left;font-size:2rem;text-align: center;line-height:7.5rem;}
+nav>ul>li>a{position:relative;overflow: hidden;}
+nav>ul>li>a::before{content:"";position:absolute;left:-1px;top:10%;width:0;height:80%;border:1px solid lightseagreen;transition:all 1s;border-left:transparent;border-right:transparent;}
+nav>ul>li>a::after{content:"";position:absolute;left:-1px;top:20%;width:0;height:60%;border:1px solid orangered;transition:all .5s;border-left:transparent;border-right:transparent;}
+nav>ul>li:hover>a::before{width:100%}
+nav>ul>li:hover>a::after{width:100%}
+nav>ul>li:hover>a{color:orange;}
+.nav-focus{background-image: linear-gradient(to right,pink 50% , orange 100%);}
+.nav-focus>a{color:violet;}
+
+/*  屏幕一   */
+
+.screen:nth-of-type(1)>h4{height:10%;font-size:5rem;text-align:center;margin-top:20%;color:white;letter-spacing: 1rem;font-weight:normal;animation: s1-big 2s linear infinite;transition:all 2s linear 1s;transform: scale(0)}
+.screen:nth-of-type(1)>p{height:10%;font-size:3rem;text-align: center;color:white;animation: s1-big 2s linear infinite;transform: scale(0);transition:all 2s linear 1s;}
+.screen:nth-of-type(1)>a{position:relative;display:block;width:30%;height:4rem;line-height:4rem;margin-left:35%;background-color:green;border-radius: 50%;text-align: center;font-size:2rem;transform: scale(0);transition:all 2s linear 1s;}
+@keyframes s1-big{
+    0%{text-shadow: 0 0 3rem red;}
+    50%{text-shadow: 0 0 0 red;}
+    100%{text-shadow: 0 0 3rem red;}
+}
+@keyframes s1-small{
+    0%{text-shadow: 0 0 3rem red;box-shadow: 0 0 4rem red;transform:translateY(0rem);}
+    50%{text-shadow: 0 0 0 red;box-shadow: 0 0 0 red;transform:translateY(2rem);}
+    100%{text-shadow: 0 0 3rem red;box-shadow: 0 0 4rem red;transform:translateY(0rem);}
+}
+
+/*  屏幕2   */
+.screen:nth-of-type(2)>h4{height:10%;font-size:5rem;text-align:center;margin:20% 0 5% 0;color:white;letter-spacing: 1rem;font-weight:normal;animation: s2-big 2s linear infinite;position:relative;transform: translateY(-800px);transition:all 1s cubic-bezier(.17,.67,.57,1.63) 2s; }
+.screen:nth-of-type(2)>p{padding:0 20%;height:10%;font-size:2rem;text-align: center;color:white;animation: s2-big 2s linear infinite;position:relative;transform: translateY(-800px);transition:all 1s cubic-bezier(.17,.67,.57,1.63) 2s;}
+@keyframes s2-big{
+    0%{text-shadow: 0 0 0rem purple;}
+    50%{text-shadow: 0 0 10rem purple;}
+    100%{text-shadow: 0 0 0rem purple;}
+}
+
+/*  屏幕3   */
+
+.screen:nth-of-type(3)>h4{height:10%;font-size:5rem;text-align:center;margin:20% 0 5% 0;color:white;letter-spacing: 1rem;font-weight:normal;position:relative;transform: translateX(100%) skewX(-30deg);opacity: 0; }
+.screen:nth-of-type(3)>p{padding:0 20%;height:10%;font-size:2rem;text-align: center;color:white;position:relative;transform: translate3d(100%, 0, 0) skewX(-30deg);opacity: 0;}
+@keyframes s3-big{
+    0%{text-shadow: 0 0 0rem lightseagreen;}
+    50%{text-shadow: 0 0 10rem orangered;}
+    100%{text-shadow: 0 0 0rem gray;}
+}
+
+@keyframes lightSpeedIn {
+  from {transform: translateX(100%) skewX(-50deg);opacity: 0;}
+  60% {transform: translateX(0) skewX(30deg);opacity: 1;}
+  80% {transform: translateX(0) skewX(-20deg);opacity: 1;}
+  to {transform: translateX(0) skewX(0);;opacity: 1;}
+}
+
+
+/*  屏幕4   */
+.screen:nth-of-type(4)>h4{height:10%;font-size:5rem;text-align:center;margin:20% 0 5% 0;color:white;letter-spacing: 1rem;font-weight:normal;position:relative;transform-origin: center;transform: rotateZ(-200deg);opacity: 0;}
+.screen:nth-of-type(4)>p{padding:0 20%;height:10%;font-size:2rem;text-align: center;color:white;position:relative;transform-origin: center;transform: rotateZ(-200deg);opacity: 0;}
+@keyframes s4-flash {
+    from, 50%, to {opacity: 1;text-shadow: 0 0 3rem orangered;}
+    25%, 75% {opacity: 0;text-shadow: 0 0 6rem orangered;}
+}
+
+@keyframes rotateIn {
+  from {transform-origin: center;transform: rotateZ(-200deg);opacity: 0;}
+  to {transform-origin: center;transform: none;opacity: 1;}
+}
+
+
+/*  屏幕5   */
+.screen:nth-of-type(5)>h4{height:10%;font-size:5rem;text-align:center;margin:20% 0 5% 0;color:lightseagreen;letter-spacing: 1rem;font-weight:normal;position:relative;}
+.screen:nth-of-type(5)>p{padding:0 20%;height:10%;font-size:2rem;text-align: center;color:lightseagreen;position:relative;}
+
+@keyframes zoomInUp {
+  from {    opacity: 0;    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);   animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190); }
+  to {  opacity: 1;  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); }
+}
+
+@keyframes pulse {
+  from {transform: scale3d(1, 1, 1);text-shadow: 0 0 2rem brown;}
+  50% { transform: scale3d(1.05, 1.05, 1.05);text-shadow: 0 0 6rem brown;}
+  to {  transform: scale3d(1, 1, 1);text-shadow: 0 0 2rem brown;}
+}

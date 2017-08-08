@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/sign.css">
+
+</head>
+
+<body>
+    <div class="superBox">
+        <div class="bigBox">
+            <ul class="leftFixed">
+                <li><img src="./img/01-1.jpg"></li>
+                <li><img src="./img/01-2.jpg"></li>
+                <li><img src="./img/01-3.jpg"></li>
+                <li><img src="./img/01-4.jpg"></li>
+            </ul>
+        </div>
+        <div class="formBox floatR">
+            <div class="form">
+                <div class="title">
+                    <h1>欢迎来到星空音乐</h1>
+                    <p>开心快乐，每一天</p>
+                </div>
+                <form>
+                    <div class="inputBox">
+                        <p class="inputKuang">
+                            <input data-success="0" maxlength="24" class="floatL" type="text" placeholder="昵称" name=""><span class="floatR"></span>
+                        </p>
+                        <span class="fontRed">昵称不能为空</span>
+                    </div>
+                    <div class="inputBox">
+                        <p class="inputKuang">
+                            <input data-success="0" maxlength="16" class="floatL" type="password" placeholder="密码" class="floatR" name=""><span class="floatR"></span>
+
+                        </p>
+                        <span class="fontRed">密码不能为空</span>
+                        <p class="hint">
+                            <span><i></i>不能包括空格</span>
+                            <span><i></i>长度为8-16个字符</span>
+                            <span><i></i>必须包含字母、数字、符号中至少两种</span>
+                        </p>
+                    </div>
+                    <div class="inputBox">
+                        <p class="inputKuang">
+                            <input data-success="1" maxlength="11" class="floatL" type="number" placeholder="手机号码" name=""><span class="floatR"></span>
+                        </p>
+                        <span class="fontRed">手机号不能为空</span>
+                        <p class="hint">
+                            <span><i></i>不能包括空格</span>
+                            <span><i></i>长度为11个字符</span>
+                        </p>
+                    </div>
+
+                    <button data-val="立即注册" type="submit">立即注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="loginBox">
+        <p>
+            <span>登陆</span>
+            <span>注册</span>
+        </p>
+    </div>
+</body>
+<script src="./js/ajax.js"></script>
+<script src="./js/sign.js"></script>
+
+</html>

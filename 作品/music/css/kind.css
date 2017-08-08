@@ -1,0 +1,35 @@
+  html,body,main,h5,ul,li,p{margin:0;padding:0;}
+        html{font-size:62.5%;}
+        /*body{min-width: 800px;}*/
+        a{text-decoration: none;}
+        li{list-style-type: none;display: inline-block;}
+
+        
+
+        /*          头部部分css             */
+
+
+        /*          主体部分css             */
+        #main{margin:30px auto 30px auto;color:white;}
+        #main .musicName,.author,.time{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;color:gray;font-size:1.4rem;height:6%;}
+        #main .musicName{color:black;}
+        #main .content{width:100%;font-size:0px;overflow: hidden;}
+        #main .content>li{height:30rem;width:18%;margin-right:2.5%;margin-top:1.5rem;margin-bottom: 1.5rem;background: rgba(255,255,255,1);}
+        #main .content>li:nth-child(5),#main .content>li:nth-child(10),#main .content>li:nth-child(15),#main .content>li:nth-child(20){margin-right:0;}
+        #main .contentImg{width:100%;height:75%;margin-bottom: 7%;display: block;position:relative;}
+        #main .contentImg>img{width:100%;height:100%;}
+        #main .contentImg>div{width:70px;height:70px;background-image: url("../img/cover_play.png");position:absolute;top:35%;left:30%;opacity:0;transform: scale(0);transition: all .5s linear;}
+        #main .contentImg:hover>div{transform: scale(1);opacity: 1;}
+        #main>h5{height:3rem;width:100%;line-height:3rem;text-align: center;font-size:2rem;letter-spacing: 1rem;}
+        #main .kind{height:2.5rem;width:100%;font-size:0;}
+        #main .kind>li{width:20%;height:2.5rem;line-height: 2.5rem;text-align: center;font-size:1.8rem;letter-spacing: .5rem;}
+        #main .kind>li:hover{color:lightblue;cursor: pointer;font-weight: bold;}
+        #main .focus{background-color:rgba(0,139,0,0.5);color:white;}
+        #main .page{width:100%;height:2rem;display: flex; justify-content: center;align-items: center;}
+        #main .page>a{margin:0 auto;height:2rem;font-size:0;display: inline-block;}
+        #main .page>a>span,#main .page>a>em{display: inline-block;height:2rem;line-height:2rem;text-align: center;width:2.5rem;margin:0 .5rem;font-size:1.5rem;color:gray;}
+        #main .page>a>span:hover{color:white;background-color: #44c522;}
+        #main .page>a>span:nth-child(1),#main .page>a>span:nth-child(2),#main .page>a>span:nth-child(3),#main .page>a>span:nth-child(4), #main .page>a>span:nth-child(5),#main .page>a>span:nth-child(6),#main .page>a>span:nth-child(10),#main .page>a>em:nth-of-type(1){display: none;}
+        #main .pageFocus{color:white;background-color: #44c522;}
+
+        /*              尾部                    */

@@ -1,0 +1,554 @@
+/*===========全部样式代码粘贴过去============*/
+@import "css/common";
+// @import "css/video";
+.placeholder{
+	background: #d2d2d2;
+	.pl-logo{
+		width: 80px;
+    }
+}
+.close-btn{
+	position: absolute;
+	width: 40px;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+}
+.interactive-container{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // background: pink;
+	cursor: pointer;
+    .main-container{
+    	width: 100%;
+    	height: 100%;
+    	display: block;
+    	opacity: 0;
+    	visibility: hidden;
+    	.next-btn,.prev-btn{
+    		position: absolute;
+    		width: 6%;
+    		top: 37%;
+    	}
+    	.next-btn{
+    		right: 0;
+    	}
+    	.left-container,.right-container{
+    		width: 50%;
+    		height: 100%;
+    		display: block;
+    	}
+    	.left-container{
+    		position:absolute;
+    		background: #fff;
+    		.left_placeholder{
+
+    			position: relative;
+    			width: 100%;
+    			display: block;
+    			.desktop-placeholder{
+    				position: relative;
+    				width: 100%;
+    				display: block;
+    			}
+    			.tablet-placeholder{
+    				display: none;
+    			}
+    		}
+    		.left-content>img{
+    			// opacity: 0;
+    		}
+    		.left-content{
+    			position: relative;
+    			width: 100%;
+    			display: inline-block;
+    			vertical-align: middle;
+    			.logo{
+					position: absolute;
+					width: 30%;
+					top: 5%;
+					left: 35%;
+					display: block;
+    			}
+    			.hidden{
+    				visibility: hidden;
+    				opacity: 0;
+    			}
+    			.product-container{
+    				.product{
+    					width: 100%;
+    					display: block;
+    				}
+    				.slider-anim3{
+			            img{
+			              transform:scale(1.2);
+			              -webkit-transform:scale(1.2);
+			              -moz-transform:scale(1.2);
+			              -o-transform:scale(1.2);
+			              -ms-transform:scale(1.2);
+			            }
+			        }
+					width: 43%;
+					top: 14.5%;
+					left: 28.5%;
+					display: block;
+				}
+				.copy-container{
+					.slider-copy{
+						width: 100%;
+    					display: block;
+					}
+					display: block;
+					top: 58%;
+					width: 60%;
+					left: 20%;
+				}
+				.cta-container{
+					display: block;
+					width: 100%;
+					top: 68%;
+					.slider-cta{
+						display: block;
+						width: 68%;
+						left: 16%;
+
+						.cta1{
+							position: relative;
+							width: 48%;
+						}
+						.cta2{
+							position: absolute;
+							width: 45%;
+							left: 55%;
+							height: 100%;
+							>div{
+								height: 100%;
+								img{
+									height: 100%;
+								}
+							}
+						}
+					}
+					.slider4-cta{
+					    width: 90%;
+    					left: 5%;
+						.cta1{
+							position: relative;
+							width: 30%;
+			            }
+			            .cta2{
+							position: absolute;
+							width: 30%;
+							left: 31%;
+							height: 100%;
+							>div{
+								height: 100%;
+								img{
+									height: 100%;
+								}
+							}
+			            }
+			            .cta3{
+							position: absolute;
+							width: 38%;
+							left: 62%;
+							height: 100%;
+							>div{
+								height: 100%;
+								img{
+									height: 100%;
+								}
+							}
+			            }
+					}
+				}
+
+				.dot-container{
+					position: absolute;
+					width: 24%;
+					left: 38%;
+					top: 81%;
+					.dot{
+						position: relative;
+						display: inline-block;
+						width: 10%;
+						margin: 0 5%;
+					}
+				}
+    		}
+    		&:after{
+    			content: "";
+    			height: 100%;
+    			display: inline-block;
+    			vertical-align: middle;
+    		}
+    	}
+    	.right-container{
+    		left: 50%;
+    		overflow: hidden;
+    		.logo_write{
+    			display: none;
+    		}
+    		.slider-container{
+    			width: 100%;
+    			height: 100%;
+    			.slider{
+    				width: 100%;
+    				height: 100%;
+    			}
+    			.slider1{
+    				background: url(assets/slider1_img.jpg) no-repeat;
+    				background-size: cover;
+    				background-position: 50%;
+    			}
+    			.slider2{
+    				background: url(assets/slider2_img.jpg) no-repeat;
+    				background-size: cover;
+    				background-position: 50%;
+    			}
+    			.slider3{
+    				background: url(assets/slider3_img.jpg) no-repeat;
+    				background-size: cover;
+    				background-position: 50%;
+    			}
+    			.slider4{
+    				background: url(assets/slider4_img.jpg) no-repeat;
+    				background-size: cover;
+    				background-position: 50%;
+    			}
+    			.slider5{
+    				background: url(assets/slider5_img.jpg) no-repeat;
+    				background-size: cover;
+    				background-position: 50%;
+    			}
+    		}
+    	}
+
+    }
+    .frame1_container{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		background: url(assets/frame1_img.jpg) no-repeat 50%;
+		background-size: cover;
+		opacity: 0;
+		.frame1-next-btn,.frame1-prev-btn{
+    		position: absolute;
+    		width: 6%;
+    		top: 37%;
+    		opacity: 0;
+    		visibility: hidden;
+    	}
+    	.frame1-prev-btn{
+    		left: 0;
+    	}
+    	.frame1-next-btn{
+    		right: 0;
+    	}
+		.frame1-content{
+			position: relative;
+			display: inline-block;
+			width: 50%;
+			left: 25%;
+			vertical-align: middle;
+			.frame1_logo{
+				position: relative;
+				width: 30%;
+				left: 35%;
+				opacity: 0;
+				visibility: hidden;
+			}
+			.frame1_copy{
+				position: relative;
+				width: 100%;
+				margin-top: 4%;
+				opacity: 0;
+				visibility: hidden;
+			}
+			.frame1_cta{
+				position: relative;
+				width: 44%;
+				left: 28%;
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+		&:after{
+			content: "";
+			height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+.tabletScene1{
+	.interactive-container{
+	    .main-container{
+	    	.next-btn,.prev-btn{
+				width: 7%;
+				top: 16%;
+	    	}
+	    	.left-container{
+	    		width: 100%;
+	    		height: 55%;
+	    		top: 45%;
+	    		.left_placeholder{
+	    			.desktop-placeholder{
+	    				display: none;
+	    			}
+	    			.tablet-placeholder{
+	    				position: relative;
+	    				width: 100%;
+	    				display: block;
+	    			}
+	    		}
+	    		.left-content{
+	    			width: 80%;
+	    			left: 10%;
+	    			.logo{
+						display: none;
+	    			}
+	    			.product-container{
+						width: 30%;
+						top: -16.5%;
+						left: 35%;
+					}
+					.copy-container{
+					    top: 53%;
+					    width: 76%;
+					    left: 12%;
+					}
+					.cta-container{
+    					top: 71%;
+    					.slider-cta {
+						    display: block;
+						    width: 80%;
+						    left: 10%;
+						}
+						.slider4-cta{
+						    width: 90%;
+	    					left: 5%;
+	    				}
+					}
+					.dot-container{
+						width: 32%;
+						left: 34%;
+						top: 100%;
+					}
+	    		}
+	    	}
+	    	.right-container{
+	    		width: 100%;
+	    		height: 45%;
+	    		left: 0%;
+	    		.logo_write{
+	    			display: block;
+					width: 30%;
+					top: 3%;
+					left: 35%;
+	    		}
+	    	}
+	    }
+	    .frame1_container{
+			
+			.frame1-next-btn,.frame1-prev-btn{
+	    		width: 8%;
+	    		top: 37%;
+	    	}
+	    	
+			.frame1-content{
+				width: 70%;
+				left: 15%;
+				.frame1_logo{
+					position: relative;
+					width: 50%;
+					left: 25%;
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+.tabletScene2{
+	.interactive-container{
+	    .main-container{
+	    	.next-btn,.prev-btn{
+	    		width: 7%;
+				top: 16%;
+	    	}
+	    	.left-container{
+	    		width: 100%;
+	    		height: 55%;
+	    		top: 45%;
+	    		.left_placeholder{
+	    			.desktop-placeholder{
+	    				display: none;
+	    			}
+	    			.tablet-placeholder{
+	    				position: relative;
+	    				width: 100%;
+	    				display: block;
+	    			}
+	    		}
+	    		.left-content{
+	    			// width: 100%;
+	    			// left: 0%;
+	    			.logo{
+						display: none;
+	    			}
+	    			.product-container{
+						width: 30%;
+						top: -16.5%;
+						left: 35%;
+					}
+					.copy-container{
+					    top: 53%;
+					    width: 76%;
+					    left: 12%;
+					}
+					.cta-container{
+    					top: 71%;
+    					.slider-cta {
+						    display: block;
+						    width: 80%;
+						    left: 10%;
+						}
+						.slider4-cta{
+						    width: 90%;
+	    					left: 5%;
+	    				}
+					}
+					.dot-container{
+						width: 32%;
+						left: 34%;
+						top: 100%;
+					}
+	    		}
+	    	}
+	    	.right-container{
+	    		width: 100%;
+	    		height: 45%;
+	    		left: 0%;
+	    		.logo_write{
+	    			display: block;
+					width: 30%;
+					top: 3%;
+					left: 35%;
+	    		}
+	    	}
+	    }
+	    .frame1_container{
+			
+			.frame1-next-btn,.frame1-prev-btn{
+	    		width: 8%;
+	    		top: 37%;
+	    		
+	    	}
+	    	
+			.frame1-content{
+				width: 70%;
+				left: 15%;
+				.frame1_logo{
+					position: relative;
+					width: 50%;
+					left: 25%;
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}	
+	}
+}
+.tabletScene3{
+	.interactive-container{
+	    .main-container{
+	    	.next-btn,.prev-btn{
+	    		width: 10%;
+				top: 16%;
+	    	}
+	    	.left-container{
+	    		width: 100%;
+	    		height: 55%;
+	    		top: 45%;
+	    		.left_placeholder{
+	    			.desktop-placeholder{
+	    				display: none;
+	    			}
+	    			.tablet-placeholder{
+	    				position: relative;
+	    				width: 100%;
+	    				display: block;
+	    			}
+	    		}
+	    		.left-content{
+	    			.logo{
+						display: none;
+	    			}
+	    			.product-container{
+						width: 40%;
+						top: -35.5%;
+						left: 30%;
+					}
+					.copy-container{
+						top: 57%;
+						width: 76%;
+						left: 12%;
+					}
+					.cta-container{
+    					top: 81%;
+    					.slider-cta {
+						    display: block;
+						    width: 80%;
+						    left: 10%;
+						}
+						.slider4-cta{
+						    width: 90%;
+	    					left: 5%;
+	    				}
+					}
+					.dot-container{
+						width: 32%;
+						left: 34%;
+						top: 118%;
+					}
+	    		}
+	    	}
+	    	.right-container{
+	    		width: 100%;
+	    		height: 45%;
+	    		left: 0%;
+	    		.logo_write{
+	    			display: block;
+					width: 30%;
+					top: 3%;
+					left: 35%;
+	    		}
+	    	}
+	    }
+	    .frame1_container{
+			
+			.frame1-next-btn,.frame1-prev-btn{
+	    		width: 12%;
+	    		top: 45%;
+	    		
+	    	}
+	    	
+			.frame1-content{
+				width: 70%;
+				left: 15%;
+				.frame1_logo{
+					position: relative;
+					width: 50%;
+					left: 25%;
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}	
+	}
+}
